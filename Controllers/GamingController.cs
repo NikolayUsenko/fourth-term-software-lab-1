@@ -20,9 +20,8 @@ namespace fourth_term_software_lab_1.Controllers
         public IActionResult Games()
         {
             ViewBag.PageTitle = "Все игры";
-            ViewBag.TotalGames = 16;
 
-            ViewBag.Games = new[]
+            var games = new[]
             {
                 new { Title = "Cyberpunk 2077", Genre = "RPG", Rating = 4.2, Platform = "PC, PS, Xbox, Switch" },
                 new { Title = "The Witcher 3", Genre = "RPG", Rating = 4.8, Platform = "PC, PS, Xbox, Switch" },
@@ -41,6 +40,8 @@ namespace fourth_term_software_lab_1.Controllers
                 new { Title = "Super Mario Odyssey", Genre = "Platformer", Rating = 4.5, Platform = "Switch" },
                 new { Title = "Metroid Prime", Genre = "FPS", Rating = 4.8, Platform = "Switch" }
             };
+            ViewBag.Games = games;
+            ViewBag.TotalGames = games.Length;
 
             return View();
         }
