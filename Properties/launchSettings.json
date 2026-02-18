@@ -18,6 +18,15 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
+    },
+    "Demo_Greeting": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "Demo/Greeting?name=Иван",
+      "applicationUrl": "https://localhost:7077",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
     }
   }
 }
